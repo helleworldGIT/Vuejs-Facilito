@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>
+		Probando Vuejs
+	</title>
+</head>
+<body>
+	<h1>¡Hola!</h1>
+	
+	<!-- Recordamos que Vue trabajará dentro del espacio denominado con el ID "#app" -->
+	<div id="app">
+		<!-- La interpolación, creada con {{}}, nos deja mostrar variables de Vue dentro de un tag HTML -->
+		<h1>{{ saludo }}</h1>
+	</div>
+
+<!-- Aquí abajo estamos importando la librería de Vue gracias a la etiqueta Script -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<!-- Aquí abajo estamos creando el objeto Vue gracias a la etiqueta Script -->
+<script>
+const app = new Vue({
+	//Recordamos que "el" hace referencia al sitio donde vue trabajará, es decir, "#app"
+        el: '#app',
+	//Recordemos que "data" es donde vamos a crear todas nuestras variables
+        data: {
+            saludo: 'Hola, soy nuevo'
+        }
+    });
+</script>
+
+</body>
+</html>
