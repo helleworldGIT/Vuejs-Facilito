@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>
+		Probando Vuejs
+	</title>
+	<meta charset="utf-8">
+</head>
+	
+<body>
+	<div id="app">
+		<h4>
+			Renderizado simple:
+		</h4>
+		<ul>
+			<li v-for="listado in lista">
+			{{listado}}
+			</li>
+		</ul>
+		<h4>
+			Renderizado de objetos con keys:
+		</h4>
+		<span v-for="dia in listadoKeys">{{dia.diaSemana + ' '}}</span>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+const app = new Vue({
+        el: '#app',
+        data: {
+            lista: ["lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo"],
+			listadoKeys: [
+				{diaSemana: "lunes"},
+				{diaSemana: "martes"},
+				{diaSemana: "miércoles"},
+				{diaSemana: "jueves"},
+				{diaSemana: "viernes"},
+				{diaSemana: "sábado"},
+				{diaSemana: "domingo"}
+			]
+        }
+    });
+</script>
+
+</body>
+</html>

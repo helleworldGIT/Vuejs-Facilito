@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>
+		Probando Vuejs
+	</title>
+	<meta charset="utf-8">
+</head>
+	
+<body>
+	<div id="app">
+		<h1>Bienvenido/a, {{ nombre }}</h1>
+		<h4>¿Cuál es tu nombre? 👇</h4>
+		<input type="text" v-model="nombre">
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+const app = new Vue({
+        el: '#app',
+        data: {
+            nombre: "Invitado/a"
+        }
+    });
+</script>
+
+</body>
+</html>

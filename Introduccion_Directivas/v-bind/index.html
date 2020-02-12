@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>
+		Probando Vuejs
+	</title>
+	<meta charset="utf-8">
+</head>
+	
+<body>
+	<div id="app">
+		<img v-bind:src="img" v-bind:title="titleName">
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+const app = new Vue({
+        el: '#app',
+        data: {
+            img: "https://images.unsplash.com/photo-1581375074612-d1fd0e661aeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80",
+			titleName: "Imagen de fruta cortada"
+        }
+    });
+</script>
+
+</body>
+</html>
