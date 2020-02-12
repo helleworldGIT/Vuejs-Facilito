@@ -11,12 +11,7 @@
 			Mi lista de deseados:
 		</h2>
 		<ul>
-			<li v-if="sueldo > 400">Calefactor</li>
-			<li v-if="sueldo > 200">Maleta</li>
-			<li v-if="sueldo > 300">Portátil</li>
-			<li v-if="sueldo > 400">Televisor</li>
-			<li v-if="sueldo > 150">Cartera</li>
-			<li v-if="sueldo > 100">Abrigo</li>
+			<li v-for="obj in listaObjetos">{{ obj }}</li>
 		</ul>
 	</div>
 
@@ -26,7 +21,8 @@
 const app = new Vue({
         el: '#app',
         data: {
-            sueldo: 340
+            sueldo: 340,
+			listaObjetos: ["Calefactor", "Maleta", "Portátil", "Televisor", "Cartera", "Abrigo", "Maceta",]
         }
     });
 </script>
