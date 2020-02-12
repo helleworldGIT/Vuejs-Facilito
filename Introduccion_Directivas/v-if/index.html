@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>
+		Probando Vuejs
+	</title>
+</head>
+	
+<body>
+	<div id="app">
+		<!-- Las directivas de Vue SIEMPRE se incluyen dentro de las tags HTML -->
+		<h1 v-if="seen">¡Me ves!</h1>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<script>
+const app = new Vue({
+        el: '#app',
+        data: {
+            seen: true
+        }
+    });
+</script>
+
+</body>
+</html>
