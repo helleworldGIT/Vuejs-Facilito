@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Probando Vuejs</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div id="app">
+			<h4>
+				Tu saldo disponible: {{precioMedio}}€
+			</h4>
+			<ul>
+				<!-- Vamos a renderizar una lista de precios con colores diferentes, dependiendo
+					de si el precio supera o está por debajo de nuestro precioMedio.
+				-->
+				<li :class="{green: precio < precioMedio, red: precio > precioMedio}" 
+					v-for="precio in precios" :key="precio.id" class="boldText">
+					{{ precio + '€' }}
+				</li>
+			</ul>
+		</div>
+	</main>
+	<footer></footer>
+	<!-- Importamos Vuejs -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<!-- Importamos nuestro propio js -->
+	<script src="main.js"></script>
+</body>
+
+</html>

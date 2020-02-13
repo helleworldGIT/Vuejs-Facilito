@@ -1,0 +1,10 @@
+/** Aquí irán nuestros estilos CSS **/
+.green{ 
+color: green; 
+} 
+.red{ 
+color:red; 
+}
+.boldText{
+	font-weight: bold;
+}
