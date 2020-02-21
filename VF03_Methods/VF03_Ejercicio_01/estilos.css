@@ -1,0 +1,29 @@
+/** Aquí irán nuestros estilos CSS **/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+* {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#app{
+	margin: 1em;
+	width: 20em;
+	margin: auto;
+}
+
+button{
+	border: 2px solid salmon;
+	padding: 0.667rem;
+	background-color: darksalmon;
+	border-radius: 0.667em;
+	font-weight: bold;
+}
+
+.enemy{
+	height: 2em;
+	background-color: lawngreen;
+	margin: auto;
+	margin-bottom: 1.5rem;
+}

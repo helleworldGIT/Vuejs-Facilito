@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Probando Vuejs</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div id="app">
+			
+			<!-- Para pasar una prop del padre al hijo, 
+					->creamos la variable en el objeto data de Vue,
+					->luego la interpolamos dentro de nuestro componente, 
+					->dentro del componente creamos un espacio para declarar las props, (digamos que como 
+						si hiciéramos una lista de todas las props que usaremos en el componente)
+
+				El paso final es este de aquí abajo, indicándole a vue que la variable interpolada
+				dentro de nuestro componente, {{saludame}}, es en realidad la variable "saludo" creada en
+				nuestro objeto Vue.
+			-->
+			<probando-props :saludame="saludo"/>
+		</div>
+	</main>
+	<footer></footer>
+	<!-- Importamos Vuejs -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<!-- Importamos nuestro propio js -->
+	<script src="main.js"></script>
+</body>
+
+</html>

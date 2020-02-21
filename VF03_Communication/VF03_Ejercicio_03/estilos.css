@@ -1,0 +1,40 @@
+/** Aquí irán nuestros estilos CSS **/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+#app{
+	width: 70%;
+	margin: auto;
+	margin-top: 2rem;
+}
+
+input{
+	padding: 0.667rem;
+	margin: 2rem;
+	border-radius: 2rem;
+}
+
+button{
+	padding: 0.400rem;
+	border-radius: 1rem;
+}
+
+p{
+	transition: all .2s;
+	border: 2px solid salmon;
+	margin-right: 0.400rem;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+
+p:hover{
+	border: 2px solid firebrick;
+	transform: translateY(-2px);
+	cursor: pointer;
+}

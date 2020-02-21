@@ -1,0 +1,25 @@
+/** Aquí irán nuestros estilos CSS **/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+html{
+	background-color: #381460;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	color: antiquewhite;
+	padding: 2rem;
+}
+
+._img{
+	width: 10rem;
+	display: inline;
+	padding: 1rem;
+}
+
+#app{
+	width: 55em;
+	margin: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Probando Vuejs</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div id="app">
+			
+			<!-- UI agregar TO-DO -->
+			<h1>
+				Lista de to-do's
+			</h1>
+			<label for="todoName">Nombre del To-do:</label><br>
+			<input v-model="newTodo" name="todoName" placeholder="¿Qué te propones?" type="text"><br>
+			<button @click="addTodo()">
+				Añadir to-do
+			</button><br>
+			<!-- /UI agregar TO-DO -->
+			
+			<!-- componente que renderiza to-do's -->
+			<todo-list :lista-de-todo="listaDeTodo" />
+			<!-- /componente que renderiza to-do's -->
+			
+		</div>
+	</main>
+	<footer></footer>
+	<!-- Importamos Vuejs -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<!-- Importamos nuestro propio js -->
+	<script src="main.js"></script>
+</body>
+
+</html>

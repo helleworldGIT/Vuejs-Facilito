@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Probando Vuejs</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<div id="app">
+			
+			<!-- 
+				== 3 == con la fórmula v-on:nombreDelEvento="funcionDelObjetoVue", estamos diciéndole a
+				Vue que al recibir el evento "activa-mensaje", tiene que lanzar su función "sacarMensaje".
+			-->
+			<probando-props v-on:activa-mensaje="sacarMensaje()" />
+		</div>
+	</main>
+	<footer></footer>
+	<!-- Importamos Vuejs -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<!-- Importamos nuestro propio js -->
+	<script src="main.js"></script>
+</body>
+
+</html>
