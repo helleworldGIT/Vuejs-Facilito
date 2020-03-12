@@ -4,4 +4,4 @@ Repositorio de mi Guía oficial **"Vuejs Facilito"**, que cuenta ya con 3 partes
 Guías disponibles en mi página web: https://desiremcarmona.com/#/profile
 
 # Si hay algún error
-Por favor si ves algo que no es correcto o que falla, repórtamelo por **Twitter** (@helleworld_). 😊
+Por favor si ves algo que no es correcto o que falla, repórtamelo por [Twitter](https://twitter.com/helleworld_). 😊
