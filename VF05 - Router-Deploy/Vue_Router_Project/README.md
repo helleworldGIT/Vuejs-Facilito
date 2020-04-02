@@ -1,11 +1,11 @@
-# vueyecto2
+# Proyecto de prueba con URLS
 
-## Project setup
+## ¡Primero instálalo! Con este comando en la consola:
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### ¡Luego runnéalo para que te funcione en el navegador! Con este comando en consola:
 ```
 npm run serve
 ```
